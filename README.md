@@ -4,4 +4,4 @@
 - Section 4: THREAD SYNCHRONIZATION: solved the problem of the bank account using Lock(), meaning that if a variable is a shared one, while a thread acquires it the other cannot!
 - Section 5: JOIN. We used join in order to wait for threads to be completed. Moreover, we protected the access of a variable through the use of Lock(). We also created a search algorithm that looks in the PC for a specific file. Then, we optimized this recursive search function thorugh multi-thread implementation
 - Section 7: introduction to barriers. A barrier is a tool that allows to syncrhonize different threads / processes together. When the threads hit together the barrier, they will again start running again. Then, we made an example about Matrix Multiplication, a CPU intensive task. So, we can distribute it over multiple threads. O(n^3) Sets of barriers are useful to syncrhonize things. However, using threads incur into the pythonic problem of GIL, hence, no outperformance are found.
-- Section 8: 
+- Section 8: memory share between processes. Again, on matrix multiplication. We rely on processes instead of threads in order to obtain faster calculations
